@@ -8,7 +8,7 @@
 .section__history::after {
     position: absolute;
     content: '';
-    background-image: url(/image/plane.png);
+    background-image: url(../image/plane.png);
     background-repeat: no-repeat;
     width: 335px;
     height: 200px;
@@ -82,7 +82,7 @@
     }
 
     .section__history::after {
-        background-image: url(/image/plane-deck.png);
+        background-image: url(../image/plane-deck.png);
         top: 60%;
         left: 70%;
         height: 220px;
@@ -113,7 +113,7 @@
     }
 
     .section__history::after {
-        background-image: url(/image/plane-deck.png);
+        background-image: url(../image/plane-deck.png);
         top:56%;
         left:65%;
         height: 220px;
