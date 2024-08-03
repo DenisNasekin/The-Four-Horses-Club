@@ -59,6 +59,7 @@
     line-height: 19px;
     padding: 8px;
     text-align: center;
+    cursor: pointer;
 }
 
 .player__button:hover {
