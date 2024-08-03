@@ -1,0 +1,205 @@
+.header {
+    min-width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/image/fon-mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__logo {
+    padding-top: 18px;
+    display: block;
+    max-width: 213px;
+    padding-bottom: 38px;
+}
+
+.header__logo-image {
+    width: 100%;
+    height: auto;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    padding-bottom: 23px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.header__title-center {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.header__title-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__text {
+    padding-bottom: 32px;
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.container__button {
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+}
+
+.button {
+    height: 47px;
+    align-items: center;
+    border-radius: 66px;
+    font-family: var(--accent-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.header__button-do {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.header__button-do:hover {
+    background-color: #FBCE51;
+    color: #1F1F1F;
+}
+.header__button-info {
+    background-color: #fff;
+    color: #1f1f1f;
+    opacity: 90%;
+}
+.header__button-info:hover {
+    background-color: #1f1f1f;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) and (max-width: 1380px) {
+    .header {    
+        display: block;
+        height: 700px;
+        background-image: url(/image/header-img.jpg);
+        background-position-x: -280px;
+    }
+
+    .header__logo {
+        padding: 26px 0 59px 72px;
+        display: block;
+    }
+    
+    .header__logo-image {
+        min-width: 245px;
+    }
+    
+    .header__content {
+        padding: 0 0 132px 72px;
+        max-width: 613px;
+    }
+    
+    .header__title {
+        font-size: 60px;
+        line-height: 66px;
+    }
+    
+    .header__title-center {
+        padding-left: 3px;
+    }
+    
+    .header__text {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .container__button {
+        flex-direction: row;
+        justify-content: center;
+        gap:16px;
+    }
+    
+    .button {
+        padding: 10px 49px;
+        text-align: center;
+        width: 266px;
+        height: 72px;
+    }
+    
+    .header__button-info {
+        background-color: transparent;
+        border: 2px solid #1F1F1F;
+        opacity: 100%;
+    }
+}
+
+@media (min-width: 1381px) and (max-width: 2000px) {
+    .header {    
+        display: flex;
+        align-items: flex-start;
+        height: 700px;
+        background-image: url(/image/header-img.jpg);
+    }
+
+    .header__logo {
+        padding: 26px 0 59px 348px;
+        display: block;
+    }
+    
+    .header__logo-image {
+        min-width: 245px;
+    }
+    
+    .header__content {
+        padding: 0 0 132px 348px;
+        max-width: 890px;
+    }
+    
+    .header__title {
+        font-size: 60px;
+        line-height: 66px;
+    }
+    
+    .header__title-center {
+        padding-left: 3px;
+    }
+    
+    .header__text {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .container__button {
+        flex-direction: row;
+        justify-content: center;
+        gap:16px;
+    }
+    
+    .button {
+        padding: 10px 49px;
+        text-align: center;
+        width: 266px;
+        height: 72px;
+    }
+    
+    .header__button-info {
+        background-color: transparent;
+        border: 2px solid #1F1F1F;
+        opacity: 100%;
+    }
+}
+
+

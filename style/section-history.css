@@ -1,0 +1,124 @@
+.section__history {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 375px;
+}
+
+.section__history::after {
+    position: absolute;
+    content: '';
+    background-image: url(/image/plane.png);
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 200px;
+    top:195px;
+    left:20px;
+}
+
+.section__history__title {
+    padding-bottom: 12px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+.section__history__link {
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color:#3057A2;
+}
+
+
+@media (min-width: 774px) and (max-width: 1300px) {
+    .section__history {
+        padding-left: 72px;
+        justify-content: flex-start;        
+    }
+
+    .section__history__title {
+        font-size: 54px;
+        line-height: 65px;
+        max-width: 806px;
+    }
+
+    .section__history__link {
+        position: absolute;
+        max-width: 280px;
+        top: 71px;
+        left: 374px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .section__history::after {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1301px) and (max-width: 1380px) {
+    .section__history {
+        padding-left: 72px;
+        justify-content: flex-start;        
+    }
+
+    .section__history__title {
+        font-size: 54px;
+        line-height: 65px;
+        max-width: 806px;
+    }
+
+    .section__history__link {
+        position: absolute;
+        max-width: 280px;
+        top: 71px;
+        left: 374px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .section__history::after {
+        background-image: url(/image/plane-deck.png);
+        top: 60%;
+        left: 70%;
+        height: 220px;
+        width: 380px;
+    }
+
+}
+
+@media (min-width: 1381px) and (max-width: 2000px) {
+    .section__history {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .section__history__title {
+        font-size: 54px;
+        line-height: 65px;
+        max-width: 806px;
+    }
+
+    .section__history__link {
+        position: absolute;
+        max-width: 280px;
+        top: 71px;
+        left: 674px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .section__history::after {
+        background-image: url(/image/plane-deck.png);
+        top:56%;
+        left:65%;
+        height: 220px;
+        width: 380px;
+    }
+
+
+}

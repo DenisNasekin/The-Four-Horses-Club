@@ -1,0 +1,313 @@
+.section__about-game {
+    min-width: 375px;
+    padding: 48px 0 34px 0;
+    display: flex;
+    justify-content: center;
+    position: relative       ;
+}
+
+.section__about-game__title {
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 400;
+}
+
+.section__about-game__image {
+    padding-bottom: 24px;
+    width: 335px;
+}
+
+.section__about-game__title-accent {
+    color: var(--accent-color);
+    font-weight: 700;
+    padding-bottom: 34px;
+    line-height: 37px;
+}
+
+.title-bottom {
+    padding-top: 440px;
+}
+
+.image__block {
+    position: relative;
+    width: 335px;
+}
+
+.section__about-game-bottom__image {
+    position: absolute;
+    width: 100%;
+    left: -15px;
+}
+
+.section__about-game-bottom__conteiner {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.section__about-game-bottom__conteiner-item {
+    position: relative;
+}
+
+.section__about-game-bottom__conteiner-item:not(.last)::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.section__about-game-bottom__conteiner-item:nth-child(4) {
+    display: flex;
+    gap: 12px;
+}
+
+.item__name {
+    font-family: var(--accent-font);
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 70%;
+}
+
+.one-line {
+    padding-bottom: 0;
+}
+
+.item__ask {
+    font-family: var(--accent-font);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.item__ask span {
+    text-decoration: line-through;
+    text-decoration-color: #F54932;
+    padding-right: 10px;
+}
+
+
+.section__about-game-bottom__conteiner-link {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 120px;
+    color: #3057A2;
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
+@media (min-width: 767px) and (max-width: 1279px) {
+    .section__about-game {
+        padding: 140px 10px 64px 10px;
+        min-width: 100%;
+        display: block;
+    }
+
+    .section__about-game__title-top {
+        display: flex;
+        align-items: center;
+        gap:80px;
+        justify-content: center;
+    }
+
+    .section__about-game__title {
+        padding-left: 10px;
+        max-width: 504px;
+        font-size: 24px;
+        line-height: 49px;
+    }
+
+    .section__about-game__image {
+        max-width: 290px;
+    }
+
+    .section__about-game-bottom {
+        padding-top: 17px;
+        display: flex;
+    }
+
+    .image__block {
+        position: relative;
+        width: 534px;
+    }
+    
+    .section__about-game-bottom__image {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -27px;
+        left: 4px;
+    }
+
+    .title-bottom {
+        padding-top: 22px;
+        padding-left: 20px;
+    }
+    
+    .section__about-game-bottom__conteiner {
+        padding-top: 35px;
+        padding-left: 20px;
+        display: flex;   
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+    }
+
+    .section__about-game-bottom__conteiner-item {
+        display: flex;
+        gap: 32px;
+    }
+
+    .section__about-game-bottom__conteiner-item:not(.last)::after {
+        bottom: -7px;
+    }
+
+    .section__about-game-bottom__conteiner-item:nth-child(5) {
+        padding-top: 1px;
+    }
+
+    .item__name {
+        padding-bottom: 12px;
+        min-width: 230px;
+        font-size: 16px;
+    }
+
+    .section__about-game-bottom__conteiner-item:nth-child(4) {
+        gap: 32px;
+        display: flex;
+    }
+
+    .section__about-game-bottom__conteiner-link {
+        padding-top: 36px;
+        padding-left: 20px;
+        padding-bottom: 140px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .section__about-game-bottom__conteiner::before {
+        position: absolute;
+        content: '';
+        height: 298px;
+        width: 2px;
+        background-color: #D0D0D0;
+        left: 270px;
+        top: 36px;
+    }
+
+    .item__ask {
+        font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1280px) and (max-width: 1980px) {
+    .section__about-game {
+        padding: 140px 0 64px 0;
+        min-width: 100%;
+        display: flex;
+        
+    }
+
+    .section__about-game__title-top {
+        display: flex;
+        align-items: center;
+        gap:64px;
+        padding-left: 56px;
+    }
+
+    .section__about-game__title {
+        max-width: 764px;
+        font-size: 36px;
+        line-height: 49px;
+    }
+
+    .section__about-game__image {
+        width: 394px;
+    }
+
+    .section__about-game-bottom {
+        padding-top: 17px;
+        display: flex;
+        padding-left: 36px;
+    }
+
+    .image__block {
+        position: relative;
+        width: 534px;
+    }
+    
+    .section__about-game-bottom__image {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -27px;
+        left: -10px;
+    }
+
+    .title-bottom {
+        padding-top: 22px;
+        padding-left: 4px;
+    }
+    
+    .section__about-game-bottom__conteiner {
+        padding-top: 35px;
+        padding-left: 4px;
+        display: flex;   
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+    }
+
+    .section__about-game-bottom__conteiner-item {
+        display: flex;
+        gap: 32px;
+    }
+
+    .section__about-game-bottom__conteiner-item:not(.last)::after {
+        bottom: -5px;
+    }
+
+    .section__about-game-bottom__conteiner-item:nth-child(5) {
+        padding-top: 0px;
+    }
+
+    .item__name {
+        padding-bottom: 12px;
+        width: 290px;
+    }
+
+    .section__about-game-bottom__conteiner-item:nth-child(4) {
+        gap: 32px;
+    }
+
+    .section__about-game-bottom__conteiner-link {
+        padding-top: 37px;
+        padding-left: 4px;
+        padding-bottom: 137px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .section__about-game-bottom__conteiner::before {
+        position: absolute;
+        content: '';
+        height: 248px;
+        width: 2px;
+        background-color: #D0D0D0;
+        left: 310px;
+        top: 36px;
+    }
+
+    .section__about-game__title-accent {
+        line-height: 48px;
+    }
+}
