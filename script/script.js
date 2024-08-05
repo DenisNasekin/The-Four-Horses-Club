@@ -68,7 +68,6 @@ const currentNumber = document.querySelector('.current-slide');
 let currentIndex = 0;
 let totalNumber = 6;
 
-
 function checkScreenWidth() {
     if (window.innerWidth < 770) {
         slides[1].classList.remove('active')
@@ -105,20 +104,22 @@ function checkScreenWidth() {
                 divider.style.opacity = '60%';
             }
         }
-
         buttonNext.addEventListener('click', ()=>{
             number = (number % totalNumber) + 1;
             currentNumber.textContent = number;
             transformColor();
             currentIndex = changeClassMob('forward')
         })
-
         buttonPrev.addEventListener('click', ()=>{
             number = (number - 2 + totalNumber) % totalNumber + 1;
             currentNumber.textContent = number;
             transformColor();
             currentIndex = changeClassMob('backward')
         })
+        setInterval(()=>{number = (number % totalNumber) + 1;
+            currentNumber.textContent = number;
+            transformColor();
+            currentIndex = changeClassMob('forward')},4000)
 
     } else if (window.innerWidth >= 770 & window.innerWidth <= 1300) {
         slides[1].classList.add('active')
@@ -174,6 +175,10 @@ function checkScreenWidth() {
             transformColor();
             [currentIndex, nextIndex] = changeClassPlan('backward');
         })
+        setInterval(()=>{number = (number % totalNumber) + 2;
+            currentNumber.textContent = number;
+            transformColor();
+            [currentIndex, nextIndex] = changeClassPlan('forward');},4000)
     } else {
         slides[1].classList.add('active')
         slides[2].classList.add('active')
@@ -235,6 +240,10 @@ function checkScreenWidth() {
             transformColor();
             [currentIndex, nextIndex, prevIndex] = changeClassDesk('backward');
         })
+        setInterval(()=>{number = (number % totalNumber) + 3;
+            currentNumber.textContent = number;
+            transformColor();
+            [currentIndex, nextIndex, prevIndex] = changeClassDesk('forward');},4000)
     }       
 }
 
